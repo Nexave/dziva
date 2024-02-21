@@ -1,0 +1,106 @@
+.help {
+  &-inner {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(0deg, #e4e4f1, #e4e4f1), #e8e4f1;
+    border-radius: 31px;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 115px;
+    padding-bottom: 115px;
+    padding-left: 142px;
+    padding-right: 182px;
+    @include laptop{
+      padding: 80px 40px;
+    }
+    @include tablet{
+      flex-direction: column;
+      padding: 50px 25px;
+    }
+
+  }
+
+   .title {
+    text-align: left;
+    margin-right: 140px;
+    width: 360px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+     @include laptop{
+       margin-right: 60px;
+     }
+     @include tablet{
+       width: 100%;
+       margin-bottom: 20px;
+     }
+     @include mobile{
+       text-align: center;
+     }
+  }
+
+   .right-block {
+    display: -ms-grid;
+    display: grid;
+    grid-column-gap: 100px;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    z-index: 1;
+     @include laptop{
+       grid-column-gap: 45px;
+    }
+     @include mobile{
+       grid-template-columns: 1fr;
+     }
+
+  }
+
+   .item {
+    margin-bottom: 60px;
+     @include mobile{
+       margin-bottom: 20px;
+    }
+  }
+
+   .item:last-of-type {
+    margin-bottom: 0;
+     @include mobile{
+       margin-bottom: 20px;
+     }
+  }
+
+  .item-icon {
+    height: 22px;
+    width: auto;
+    margin-bottom: 15px
+  }
+
+   .item .subtitle {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 150%;
+    font-family: var(--font1);
+    margin-bottom: 9px
+  }
+
+  .item .text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    font-family: var(--font1)
+  }
+
+   .decor-img {
+    height: 306px;
+    width: 1410px;
+    background: url(../img/decor.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    background-position: right;
+    left: -800px;
+    bottom: 109px;
+    z-index: 0;
+     @include tablet{
+       left: -1247px;
+     }
+  }
+}

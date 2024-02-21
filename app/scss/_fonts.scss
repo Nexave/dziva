@@ -1,0 +1,6 @@
+@import "_mixins/font-face";
+
+@include font-face("MazzardM", "../fonts/mazzardm-medium/MazzardM-Medium", 500);
+@include font-face("TTtravels", "../fonts/tttravels-light/TTTravels-Light", 300);
+@include font-face("TTtravels", "../fonts/tttravels-medium/TTTravels-Medium", 500);
+@include font-face("TTtravels", "../fonts/tttravels-bold/TTTravels-Bold", 700);

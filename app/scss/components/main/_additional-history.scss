@@ -1,0 +1,62 @@
+.additional-history{
+  padding-bottom: 115px;
+  @include tablet{
+    padding-bottom: 80px;
+  }
+  @include mobile{
+    padding-bottom: 30px;
+  }
+  &-inner{
+    padding-left: 140px;
+    padding-right: 140px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px 220px;
+
+    @include laptop{
+      padding-left: 50px;
+      padding-right: 50px;
+      grid-gap: 20px 80px;
+    }
+    @include tablet{
+      padding-left: 0;
+      padding-right: 0;
+    }
+    @include mobile{
+      grid-template-columns: 1fr
+    }
+    .column:first-of-type{
+      padding-top: 144px;
+      @include mobile{
+        padding-top: 0;
+      }
+    }
+    .subtitle{
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 150%;
+      margin-bottom: 34px;
+      @include tablet{
+        font-size: 22px;
+      }
+      @include mobile{
+        font-size: 18px;
+        line-height: 1.3;
+        margin-bottom: 15px;
+      }
+    }
+    p{
+      margin-bottom: 30px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 150%;
+      @include tablet{
+        font-size: 16px;
+      }
+      @include mobile{
+        font-size: 14px;
+        line-height: 1.3;
+      }
+    }
+  }
+}
